@@ -1,0 +1,74 @@
+{
+  "data_sample_seed": 42,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "rf_params": {
+    "n_estimators": 100,
+    "max_depth": 15
+  },
+  "abstention_coverages": [
+    0.9,
+    0.8,
+    0.7
+  ],
+  "distance": {
+    "k": 15,
+    "max_ref_samples": 5000,
+    "metrics": [
+      "euclidean",
+      "cosine"
+    ]
+  },
+  "conformal_alpha": 0.1,
+  "exp_c_source": "UNSW-NB15 held-out test split",
+  "exp_c_target": "CIC-IDS2017",
+  "withheld_families_requested": [
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Reconnaissance"
+  ],
+  "dataset_sizes": {
+    "unsw_train": 40000,
+    "unsw_test": 40000,
+    "cic": 6320
+  },
+  "feature_count": 30,
+  "features": [
+    "dur",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "stcpb",
+    "dtcpb",
+    "dwin",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "is_ftp_login",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd"
+  ]
+}
